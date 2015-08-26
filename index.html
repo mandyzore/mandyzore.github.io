@@ -63,8 +63,8 @@ at Shandong University, from which I received a B.E. in Software Engeering in Ju
 <p style="padding-left: 30px;">
 <span style="color:red">Top* Looking for PhD position.</span> Here is my <a href="http://mandyzore.github.io/Resume.pdf">CV</a> and
  feel free to send spam etc to me if you know any seriously fun group related to NLP.<br>
-Aug. 2015 Granding with GRE.<br>
-Jul. 2015 My NLPCC paper got accepted!<br>
+Aug. 2015 Preparing one paper targeting at Sep's AAAI.<br>
+Jul. 2015 My <a href="http://tcci.ccf.org.cn/conference/2015/">NLPCC</a> paper got accepted!<br>
 Jul. 2015 Attending <a href="http://acl2015.org/">ACL 2015</a> at Beijing.<br>
 Jul. 2015 Attending <a href="http://www.cipsc.org.cn/summerschool/">CIPS Summer School</a> at PKU.<br>
 Jun. 2015 Our ACL paper got accepted!<br>
@@ -90,28 +90,39 @@ linmei Hu, Xuzhong Wang, Mengdi Zhang, Juanzi Li.<br>
 <h2>Work in Progress</h2>
 <ul>
 	<li><p><b>Joint 5Ws modeling and Event Extraction</b>.<br>
-	Starting in June of 2015, I'm working with <a href="http://nlp.cs.rpi.edu/hengji.html">Prof. Heng Ji</a> and Juanzi Li's group
-	on event extraction and knowledge base construction.</p>
+	Starting in June of 2015, I’m working with <a href="http://nlp.cs.rpi.edu/hengji.html">Prof. Heng Ji</a>
+	and Juanzi Li’s group on document-level event extraction. Beyond the traditional sentence-level IE task, I
+	try to connected all the event pieces cross the whole news document by adding discourse relation between
+	sentences. A event network model is expected to constructed firstly. Then propagate the temporal and
+	geometry information through the network, and jointly infer each event’s 5Ws and the salient event from this
+	network.</p>
 	</li>
 </ul>
 
 <h2>Experience</h2>
 <ul>
-	<li><p><b>Chinese News Analysis Platform</b> with Yixin Cao, Linmei Hu,
+	<li><p><b>Cooperation with Xinhua News Agency: News monitoring and clustering</b> with Yixin Cao, Linmei Hu,
 	and Lei Hou.<br>
-	Starting in Oct. of 2014, I worked with Professor Juanzi Li's group
-	on Chinese news analysis. Work involved several NLP and text mining tasks: news classification, topic detection, 
-	topic tracing, event extraction and visualization. I mainly worked on data collecting, news meta-data extraction. Our 
-	work was presented at the APEC in Beijing.
+	Starting in Oct. of 2014, I worked with Prof. Juanzi Li’s group on Chinese News
+	Analysis. We automatedly crawl articles from 12 news media sites and classify news to 8 categories, mining
+	hot topic, trace salient event and analyse media’s reporting trends. I extract the 5Ws of each news, by firstly
+	locating the topic sentences, and then use separately trained classifiers to discern the five news elements.
+	Both the Stanford paser and HIT paser are tested in the experiments. Our work was presented at the APEC
+	in Beijing.
 	(<a href="">system</a>, <a href="">presentation</a>)</p>
 	</li>
 </ul>
 
 <ul>
-	<li><p><b>Automated Question Answering System of Bank</b> with Yixin Cao, Tao
+	<li><p><b>Automated Question Answering</b> with Yixin Cao, Tao
 	Huang and Peng Zhang <br>
-	Starting in Sep. of 2014, this is a collaborated project with Sinovoice Co. on
-	question answering system for bank's consultant service.(<a href="">lessons</a>)
+	Starting in Sep. of 2014, this is a collaborated project with Sinovoice Co.
+	on question answering system for bank’s consultant service. We try to automatedly answer users’ question
+	based on FAQ corpus. We collected the Frequent Asked Questions from the bank consult log; proposed and
+	trained a target-word model for the informative words in question; learned a two-layer product-and-attribute
+	knowledge by clustering the FAQ and predicting each cluster’s target-words. Finally, a new query is analysed
+	by the same target-word classifier and . The best matched answer is returned to the user from the mapped
+	FAQ cluster based on the obtained domain knowledge, and ranked by our target-word based BM25(<a href="">lessons</a>)
 	</li>
 </ul>
 <ul>
