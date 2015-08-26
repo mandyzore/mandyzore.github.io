@@ -95,7 +95,7 @@ linmei Hu, Xuzhong Wang, Mengdi Zhang, Juanzi Li.<br>
 	try to connected all the event pieces cross the whole news document by adding discourse relation between
 	sentences. A event network model is expected to constructed firstly. Then propagate the temporal and
 	geometry information through the network, and jointly infer each event’s 5Ws and the salient event from this
-	network.</p>
+	network.</p>	
 	</li>
 </ul>
 
@@ -103,12 +103,11 @@ linmei Hu, Xuzhong Wang, Mengdi Zhang, Juanzi Li.<br>
 <ul>
 	<li><p><b>Cooperation with Xinhua News Agency: News monitoring and clustering</b> with Yixin Cao, Linmei Hu,
 	and Lei Hou.<br>
-	Starting in Oct. of 2014, I worked with Prof. Juanzi Li’s group on Chinese News
-	Analysis. We automatedly crawl articles from 12 news media sites and classify news to 8 categories, mining
-	hot topic, trace salient event and analyse media’s reporting trends. I extract the 5Ws of each news, by firstly
-	locating the topic sentences, and then use separately trained classifiers to discern the five news elements.
-	Both the Stanford paser and HIT paser are tested in the experiments. Our work was presented at the APEC
-	in Beijing.
+	Starting in Oct. of 2014, We periodically crawled articles from 12 news sites and
+	analyzed news trend on several text mining tasks, including news topic classification, hot topic detection,
+	topic tracing, and salient event extraction. I mainly worked on the 5Ws extraction for each news on a
+	supervised learning fashion. A bunch of NLP tools were tested and combined in my implementation. Our
+	work was presented at the APEC in Beijing. One paper submitted to JIST.
 	(<a href="">system</a>, <a href="">presentation</a>)</p>
 	</li>
 </ul>
@@ -116,31 +115,26 @@ linmei Hu, Xuzhong Wang, Mengdi Zhang, Juanzi Li.<br>
 <ul>
 	<li><p><b>Automated Question Answering</b> with Yixin Cao, Tao
 	Huang and Peng Zhang <br>
-	Starting in Sep. of 2014, this is a collaborated project with Sinovoice Co.
-	on question answering system for bank’s consultant service. We try to automatedly answer users’ question
-	based on FAQ corpus. We collected the Frequent Asked Questions from the bank consult log; proposed and
-	trained a target-word model for the informative words in question; learned a two-layer product-and-attribute
-	knowledge by clustering the FAQ and predicting each cluster’s target-words. Finally, a new query is analysed
-	by the same target-word classifier and . The best matched answer is returned to the user from the mapped
-	FAQ cluster based on the obtained domain knowledge, and ranked by our target-word based BM25. (<a href="">lessons</a>)
+	Starting in Sep. of 2014, Work involved automated answering bank
+	user’s question based on Frequent Asked Questions corpus. we proposed a semi-automatic domain-restricted
+	FAQ answering framework SDFA, without relying on any external resources. SDFA detected the targets of
+	questions to assist both the fast domain knowledge learning and the answer retrieval. The proposed framework
+	had been successfully applied in real project on bank domain. Extensive experiments on two large datasets
+	demonstrated the effectiveness and efficiency of the approaches. One paper published on NLPCC. (<a href="">lessons</a>)
 	</li>
 </ul>
 <ul>
 	<li><p><b>Topic-targeted Influence Maximization in Social Network</b>
 	(Undergraduate Thesis).
 	<br>
-	Starting in Mar. of 2014, I worked on influence maximization problem as my undergraduate thesis.
-	I adjusted the classic influence maximization problem by adding topic factor into influence model. <!--Both 
-	greedy and hueristic algorithm are designed and implemented, and a new hueristic strategy was proposed.
-	and proposed three topic-aware methods(i.e. TGG, TNG and TDD), and proposed another new algorithm: TSRS, 
-	the topic-aware seed region separation algorithm, based on the spreading of locality influence.
-	Executed designed experiments showed that TSRS out perform the TDD algorithm in spread 
-	result and far away out perform the TGG algorithm in time efficiency.--> Coded in Python.
-	I completed my undergraduate honors thesis with <a href="http://www.cs.sdu.edu.cn/website_person_en.do?id=53">Prof. Jun Ma</a> as my advisor. 
+	Starting in Mar. of 2014, the problem I worked on is a new
+	scenario of traditional IM problem: how to chose the seed users to maximize the influence on social network
+	targeting a certain topic. I combined the topic to the optimization objective and investigated both greedy and
+	heuristic algorithm, and then proposed a new heuristic strategy by punishing local influence overlap, which achieved best performance. The experiments were conducted on two huge real-world datasets: a dirctor-actor-writer-movie network from Wikipedia’s movie page and a citation network from AMiner.My thesis on this work with <a href="http://www.cs.sdu.edu.cn/website_person_en.do?id=53">Prof. Jun Ma</a>’s advisor achieved Excellent Undergraduate Thesis honors.
 	(<a href="">pdf in Chinese</a>)</p>
 	</li>
 </ul>
-
+<!--
 <ul>
 	<li><p><b>Data Mining in Social Media</b> with <a href="http://ir.sdu.edu.cn/~shuaigao/">Shuai Gao</a>
 	<br>
@@ -149,7 +143,7 @@ linmei Hu, Xuzhong Wang, Mengdi Zhang, Juanzi Li.<br>
 	</p>
 	</li>
 </ul>
-<!--
+
 <ul>
 	<li><p><b>Distributed information retrieval</b> with Shuai Gao
 	<br>
