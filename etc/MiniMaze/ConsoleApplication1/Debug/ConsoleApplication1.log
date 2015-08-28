@@ -1,0 +1,23 @@
+﻿生成启动时间为 2012-12-30 23:12:51。
+     1>项目“C:\Users\Mengdi\Desktop\openGL实验3\ConsoleApplication1\ConsoleApplication1.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\ConsoleApplication1.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "..\openGL实验3\Maze_events.cpp" "..\openGL实验3\Maze_lib.cpp" "..\openGL实验3\Maze_main.cpp" "..\openGL实验3\Maze_math.cpp" "..\openGL实验3\Maze_objects.cpp" "..\openGL实验3\Maze_world.cpp"
+         Maze_world.cpp
+         Maze_objects.cpp
+     1>c:\users\mengdi\desktop\opengl实验3\opengl实验3\maze_objects.cpp(277): error C2664: “GetCurrentDirectoryW”: 不能将参数 2 从“char [512]”转换为“LPWSTR”
+                 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+         Maze_math.cpp
+         Maze_main.cpp
+         Maze_lib.cpp
+     1>c:\users\mengdi\desktop\opengl实验3\opengl实验3\maze_lib.cpp(233): error C2664: “GetCurrentDirectoryW”: 不能将参数 2 从“char [512]”转换为“LPWSTR”
+                 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+     1>c:\users\mengdi\desktop\opengl实验3\opengl实验3\maze_lib.cpp(248): warning C4018: “<”: 有符号/无符号不匹配
+         Maze_events.cpp
+         正在生成代码...
+     1>已完成生成项目“C:\Users\Mengdi\Desktop\openGL实验3\ConsoleApplication1\ConsoleApplication1.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:11.05

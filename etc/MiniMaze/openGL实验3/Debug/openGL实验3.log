@@ -1,0 +1,32 @@
+﻿生成启动时间为 2012-12-30 23:05:31。
+     1>项目“C:\Users\Mengdi\Desktop\openGL实验3\openGL实验3\openGL实验3.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\openGL实验3.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Maze_events.cpp Maze_lib.cpp Maze_main.cpp Maze_math.cpp Maze_objects.cpp Maze_world.cpp
+         正在跳过...(未检测到相关更改)
+         Maze_world.cpp
+         Maze_objects.cpp
+         Maze_math.cpp
+         Maze_main.cpp
+         Maze_lib.cpp
+         Maze_events.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mengdi\Desktop\openGL实验3\Debug\openGL实验3.exe" /INCREMENTAL /NOLOGO glaux.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Mengdi\Desktop\openGL实验3\Debug\openGL实验3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mengdi\Desktop\openGL实验3\Debug\openGL实验3.lib" /MACHINE:X86 Debug\Maze_events.obj
+         Debug\Maze_lib.obj
+         Debug\Maze_main.obj
+         Debug\Maze_math.obj
+         Debug\Maze_objects.obj
+         Debug\Maze_world.obj
+     1>Maze_world.obj : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“Maze_world.obj”或在“C:\Users\Mengdi\Desktop\openGL实验3\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>Maze_objects.obj : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“Maze_objects.obj”或在“C:\Users\Mengdi\Desktop\openGL实验3\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>Maze_math.obj : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“Maze_math.obj”或在“C:\Users\Mengdi\Desktop\openGL实验3\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>Maze_main.obj : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“Maze_main.obj”或在“C:\Users\Mengdi\Desktop\openGL实验3\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>Maze_lib.obj : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“Maze_lib.obj”或在“C:\Users\Mengdi\Desktop\openGL实验3\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>Maze_events.obj : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“Maze_events.obj”或在“C:\Users\Mengdi\Desktop\openGL实验3\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LINK : fatal error LNK1207: “C:\Users\Mengdi\Desktop\openGL实验3\Debug\openGL实验3.pdb”中的 PDB 格式不兼容；请删除并重新生成
+     1>已完成生成项目“C:\Users\Mengdi\Desktop\openGL实验3\openGL实验3\openGL实验3.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.98
