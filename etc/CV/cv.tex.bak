@@ -1,0 +1,283 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                             Curriculum Vitae                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,a4]{article}
+
+\topmargin-2.0cm
+\advance\oddsidemargin-2.2cm
+\advance\evensidemargin-1.2cm
+\textheight9.22in
+\textwidth6.4in
+\newcommand\bb[1]{\mbox{\em #1}}
+%\def\baselinestretch{1.25}
+\def\baselinestretch{1.0}
+\footskip  50pt                       % Ò³½Å¾àÀë
+
+\usepackage{multicol}
+% The use of the times package forces the use of the type-1 times
+% roman font, but the times roman font does not look nice.
+% Besides the times roman font still does not print correctly on
+% the dopy printer.
+%\usepackage{times}
+
+\usepackage{fancyhdr}
+\usepackage{origpagecounting}
+\usepackage[dvips]{color}
+
+\newcounter{myEnumCounter}
+\newcounter{mySaveCounter}
+\renewenvironment{enumerate}{%
+  \begin{list}{\arabic{myEnumCounter}.}{\usecounter{myEnumCounter}%
+  \setcounter{myEnumCounter}{\value{mySaveCounter}}}
+  }{%
+  \setcounter{mySaveCounter}{\value{myEnumCounter}}\end{list}%
+}
+\newcommand\myEnumReset{\setcounter{mySaveCounter}{0}}
+
+% The old enumerate environment is rewritten, so you need no special command to
+% start continuing counting. With the command \myEnumReset you can Reset the couter
+% at any place in the text.
+
+% http://www.educat.hu-berlin.de/~voss/lyx/list/enum.phtml
+
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\begin{document}
+
+%\thispagestyle{empty}
+%\pagestyle{plain}
+
+%\thispagestyle{fancy}
+%\pagenumbering{gobble}
+%\fancyhead[location]{text}
+% Leave Left and Right Header empty.
+%\lhead{\textcolor{gray}{\it Mengdi ZHANG}}
+%\rhead{\textcolor{gray}{D.O.B: 19/07/1991}}
+%\rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[CO,CE]{\footnotesize \textcolor{gray}{}}
+%A copy of this curriculum vitae, publications and
+%talk slides are available for download at
+%http://www.stanford.edu/$\sim$sundaes/application}}
+
+\pagestyle{fancy}
+\markboth{D.O.B: 19/07/1991}{Mengdi ZHANG}
+\pagenumbering{arabic}
+\rfoot[C]{\thepage}
+
+%\vspace*{0.005cm}
+\begin{center}
+{\huge \bf MENGDI ZHANG}
+\vspace*{0.25cm}
+\end{center}
+
+\begin{small}
+%===================================
+\begin{tabbing}
+\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+
+East Main Building 10\#201 & Phone: +86 15646524178\\
+Knowledge Engineering Group Lab. &  Email: mdzhangmd@gmail.com\\
+Tsinghua University, Beijing, 100084, China & Homepage: http://mandyzore.github.io \\
+\end{tabular*}
+\end{tabbing}
+
+%\vspace*{0.2cm}
+
+
+%==========================================
+%\vspace{0.20cm}
+
+\subsection*{EDUCATION}
+
+%{\color{DarkSeaGreen}} \hrule
+\hrule
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabbing}
+xxxx\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+%\>\begin{tabular*}{6.1in}{lr}
+\>\begin{tabular*}{0.9\linewidth}{l@{\extracolsep{\fill}}r}
+\bf{Shandong University} & Shandong, China \\
+Bachelor of Engineering in Software Engineering  &  { Sep. 2010 - July 2014}\\
+\\GPA:  82/100     3.40/4.00\\
+Undergraduate Thesis: \emph{Topic-targeted Influence Maximization in Social Network}\\
+Advisor: Prof. Jun Ma\\
+\end{tabular*}
+\end{tabbing}
+
+\subsection*{OBJECTIVE}
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+\item Ph.D position under Prof. Heng Ji, BLENDER Lab, Computer Science Department, Rensselaer Polytechnic.
+\item Research interests: Natural Language Processing, Machine Learning and Data Mining
+\end{itemize}
+
+\subsection*{PUBLICATIONS}%================================
+\hrule
+\vspace{0.2cm}
+\begin{enumerate}
+    \item Linmei Hu, Xuzhong Wang, {\bf Mengdi Zhang}, Juanzi Li: ``Learning Topic Hierarchies For Wikipedia Category" \emph{ACL}, (2): 346--351, 2015.
+    \item {\bf Mengdi, Zhang}, Tao Huang, Yixin Cao, Lei: ``Target Detection and Knowledge Learning for Domain Restricted Question Answering." \emph{NLPCC}, accepted, 2015.
+      \item Junbo, Xia, {\bf Mengdi, Zhang}, Lei Hou, Yixin Cao:  ``CNME: A system for Chinese News Meta-data Extraction" \emph{JIST}, submitted, 2015.
+        %To appear \emph{Alcoholism: Clinical and Experimental Research}, 2012.
+\end{enumerate}
+\myEnumReset
+
+\subsection*{RESEARCH EXPERIENCE}
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+%\item %{\bf Research Assistant, KEG Lab, Tsinghua University}, Oct 2014 - Present.
+    %\\==========
+
+\item {
+\begin{tabbing}
+\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+ {\bf Research Assistant} &Oct 2014 - Present \\
+ KEG Lab, Tsinghua University&\\
+\end{tabular*}
+\end{tabbing}
+}
+
+\vspace{0.1cm}
+{\bf Joint 5Ws Modeling and Event Extraction}, (June 2015 - Present): I'm working with Prof. Heng Ji and Juanzi Li's group on document-level event extraction. Beyond the traditional sentence-level IE task, I try to connected all the event pieces cross the whole news document by adding discourse relation between sentences. A event network model is expected to constructed firstly. Then propagate the temporal and geometry information through the network, and jointly infer each event's 5Ws and the salient event from this network.
+
+\vspace{0.1cm}
+{\bf Chinese News Analysis}, (Oct 2014 - Mar 2015):  We periodically crawled articles from 12 news sites and analyzed news trend on several text mining tasks, including news topic classification, hot topic detection, topic tracing, and salient event extraction. I mainly worked on the 5Ws extraction for each news on a supervised learning fashion. A bunch of NLP tools were tested and combined in my implementation. Our work was presented at the APEC in Beijing. One paper submitted to JIST.
+
+\vspace{0.1cm}
+{\bf Automated Question Answering}, (Sep 2014 - Dec 2014): Work involved automated answering bank user's question based on Frequent Asked Questions corpus. we proposed a semi-automatic domain-restricted FAQ answering framework SDFA, without relying on any external resources. SDFA detected the targets of questions to assist both the fast domain knowledge learning and the answer retrieval. The proposed framework had been successfully applied in real project on bank domain. Extensive experiments on two large datasets demonstrated the effectiveness and efficiency of the approaches. One paper published on NLPCC.%We collected the FQA  from the bank consult log; proposed and trained a target-word model for the informative words in question; learned a two-layer product-and-attribute knowledge by clustering the FAQ and predicting each cluster's target-words. Finally, a new query is analyzed by the same target-word classifier and . The best matched answer is returned to the user from the mapped FAQ cluster based on the obtained domain knowledge, and ranked by our target-word based BM25.
+%This was a collaborated project with Sinovoice Co. for bank's consultant service.
+
+
+\vspace{0.2cm}
+\item {
+\begin{tabbing}
+\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+ {\bf Undergraduate Research Assistant} &Jan 2014 - Sep 2014 \\
+ IRLab, Shandong University&\\
+\end{tabular*}
+\end{tabbing}
+}
+
+%\item {\bf Undergraduate Research Assistant, IRLab, Shandong University}, Jan 2014 - Sep 2014.
+
+%\vspace{0.1cm}
+   % {\bf Information Propagation on Weibo}, (Aug 2014 - Sep 2014). I worked on social media and data mining with Professor Jun Ma as RA in I.R. Lab at Shandong University. I proposed a combination model considering both locality influence measure and message exposure probability. By treating the retweet prediction as a classification problem, use logistic regression to predict a massage¡¯s propagation on network.
+
+\vspace{0.1cm}
+{\bf Topic-targeted Influence Maximization}, (Feb 2014 - May 2014): The problem I worked on is a new scenario of traditional IM problem: how to chose the seed users to maximize the influence on social network targeting a certain topic. I combined the topic to the optimization objective and investigated both greedy and heuristic algorithm, and then proposed a new heuristic strategy by punishing local influence overlap, which achieved best performance. The experiments were conducted on two huge real-world datasets: a dirctor-actor-writer-movie network from Wikipedia's movie page and a citation network from AMiner. My thesis on this work with Prof. Jun Ma's advisor achieved Excellent Undergraduate Thesis honors.
+
+\vspace{0.1cm}
+\item {
+\begin{tabbing}
+\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+ {\bf Undergraduate Research Assistant} &Jan 2011 - Sep 2012 \\
+ Database\&Search Lab, Shandong University&\\
+\end{tabular*}
+\end{tabbing}
+}
+
+%\item {\bf Undergraduate Research Intern, Database\&Search Lab, Shandong University}, Jun 2011 - Sep 2012.
+
+\vspace{0.1cm}
+{\bf Distributed Information Search and Retrieval}, (Jan 2011 - Sep 2012) : We built a distributed information search and retrieval system based on open source structure of Lucene\&Nutch, combining XML and Hadoop technique. I designed and implemented the document retrieval module, dynamic server organization module and the application interface. We won a first prize on Qilu Software competition.%Distributed Information Search and Retrieval
+
+\end{itemize}
+
+%\vspace{0.1cm}
+\subsection*{INTERN EXPERIENCE}
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+%\item {\bf Software Engineer, Yingc Inc., Jinan}, Jul 2014 - Aug 2014.
+
+\item{
+\begin{tabbing}
+\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+ {\bf Software Engineer} &  Jul 2014 - Aug 2014 \\
+ Yingc Inc., Jinan\\
+\end{tabular*}
+\end{tabbing}
+}
+
+    {\bf Education Quality Analysis and Evaluation System:} I built a e-learning platform based on B/S structure for local education government. The system was used for quantizing students' performance and teachers' ability, allowing educational department of government to evaluating each schools's qualification. I independently developed it in two weeks, achieved all function required by myself, including requirement analysis, function modules design, Web front-end development and PHP back-end development. Coded in PHP.
+
+\vspace{0.1cm}
+%\item {\bf Software Engineer, Micro Security Corporation, Jinan}, Jun 2013 - Aug 2013.
+\item{
+\begin{tabbing}
+\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+ {\bf Software Engineer} &   Jun 2013 - Aug 2013 \\
+ Micro Security Corporation, Jinan\\
+\end{tabular*}
+\end{tabbing}
+}
+    {\bf Intelligent Campus System Based on 433MHz Internet of Thing:} We built an Internet of Thing system enabling users to use mobile phone app to remotely check the real-time temperature and humidity, and control classroom's light. As the team leader of five other students, I designed the communication structure of whole system and implemented the sensing layer with C on STM32 chip. At last I made a presentation as outstanding student on behalf of my group. Coded in C and Java.
+
+
+\end{itemize}
+
+\subsection*{PATENTS}%================================
+\hrule
+\vspace{0.2cm}
+\begin{enumerate}
+    \item Zhang Mengdi. One Type of Variable Screen Mesh, App. No. 201120196592.0, App. Date: Feb. 01. 2012.
+    \item Zhang Mengdi. One Type of Linkage Distance Adjusting Mesh Screen, App. No. 201120296585.0, App. Date: Nov. 03. 2011.
+\end{enumerate}
+\myEnumReset
+
+%\vspace{0.1cm}
+\subsection*{ACTIVITIES}%================================
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+	\item Poster on ACL, Beijing, Jul 2015.
+    %\item Attending CIPS Summer School, Beijing, Jul 2015.
+	\item Team leader in CSDGC YCISL program of Stanford University, San Francisco, Feb 2014.
+    \item Team leader in MSRA Student Summer Camp, Beijing, Aug 2013.
+    \item Team leader in Youth Volunteer Activity of community-supported volunteer teacher, Jinan, 2010 - 2011.% to Liu Zhi Yuan Village
+\end{itemize}
+
+%\vspace{0.1cm}
+
+%\vspace{0.1cm}
+\subsection*{HONORS}%================================
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+	\item 2014.03    Research and Innovation Scholarship, Shandong University,
+    \item 2012.10    Outstanding Student Scholarship, Shandong University.
+    \item 2012.09    Outstanding Innovation individual of College Award, Shandong University.
+    \item  2012.03    Third Prize, 2012 Mathorcup Global Mathematical Modeling Challenge.
+    \item 2011-2012  One First and Two Second Prizes in Tenth Qilu Software Design and Foreign Competition.
+\end{itemize}
+
+%\vspace{0.1cm}
+\subsection*{SKILLS}%================================
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+
+    \item Programming language: Java, C++, Python, PHP, JavaScript.
+    \item Tools: Matlab, Processing, Latex, Emacs.
+    \item Database: Oracle, Mysql, MongoDB.
+    %\item Toolbox: Stanford NLP
+
+
+\end{itemize}
+
+
+\end{small}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
